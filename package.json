@@ -1,0 +1,39 @@
+{
+  "name": "sudobot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon --ignore ./src/bwd/ ./src/app.js",
+    "test": "./node_modules/.bin/eslint ./",
+    "lint": "./node_modules/.bin/eslint ./ --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woosy/SudoBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Woosy/SuboBot/issues"
+  },
+  "homepage": "https://github.com/Woosy/SuboBot#readme",
+  "dependencies": {
+    "convict": "^4.4.1",
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^6.2.0",
+    "klasa": "github:dirigeants/klasa#master",
+    "klasa-member-gateway": "github:dirigeants/klasa-member-gateway",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.9"
+  }
+}

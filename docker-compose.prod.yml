@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  sudo-bot:
+    container_name: sudo-bot
+    hostname: sudo-bot
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: sudo-bot:0.0.1
+    restart: always
+    volumes:
+      - ./src/bwd:/usr/src/app/src/bwd
+      - /usr/src/app/node_modules
+    command: node src/app.js
